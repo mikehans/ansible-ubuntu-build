@@ -1,0 +1,19 @@
+[user]
+	name = Mike Hansford
+	email = mjhansford@gmail.com
+[mergetool "vimdiff"]
+	name = vimdiff 
+	trustExitCode = true
+[difftool "vimdiff"]
+	name = vimdiff
+	trustExitCode = true
+[alias]
+	st = status
+	br = branch
+	cm = commit
+	co = checkout
+	cob = checkout -b
+	logf = log --stat
+	undo = reset HEAD~1 --mixed
+	amend = commit --amend
+	wip = commit -m "WIP"

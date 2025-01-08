@@ -1,0 +1,24 @@
+---
+- name: "Base YML file"
+  hosts: localhost
+  connection: local
+  become: true
+  tasks:
+  
+    - name: "Update and upgrade installed packages"
+      apt:
+        update_cache: true
+        upgrade: full
+        autoremove: true
+
+    - name: "Install software-properties-common"
+      apt:
+        name: software-properties-common
+
+    - name: "Install vim"
+      apt:
+        name: vim
+        state: present
+    
+    - name: "Install nvm"
+      shell: curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash

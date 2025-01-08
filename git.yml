@@ -1,0 +1,17 @@
+---
+- name: Setup git
+  hosts: localhost
+  connection: local
+  become: true
+  tasks:
+
+    - name: Install git
+      apt:
+        name: git
+        state: present
+
+    - name : Copy gitconfig
+      copy:
+        src: ./files/git/.gitconfig
+        dest: ~/.gitconfig
+        mode: u=rw,g=rw,o=r
