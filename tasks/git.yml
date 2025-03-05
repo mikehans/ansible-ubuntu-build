@@ -1,0 +1,10 @@
+- name: Install git
+  apt:
+    name: git
+    state: latest
+
+- name : Copy gitconfig
+  copy:
+    src: ./files/git/.gitconfig
+    dest: ~/.gitconfig
+    mode: u=rw,g=rw,o=r

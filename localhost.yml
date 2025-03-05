@@ -1,0 +1,25 @@
+---
+  - name: Set up my dev machine
+    become: yes
+    hosts: localhost
+    connection: local
+    tasks: 
+      - name: "Update cache, install base packages"
+        import_tasks: 
+        file: tasks/base.yml
+
+      - name: "Install bash profile"
+        import_tasks:
+        file: tasks/profile.yml
+
+      - name: "Install git"
+        import_tasks:
+        file: tasks/git.yml
+
+      - name: "Install node"
+        import_tasks:
+        file: tasks/node.yml
+
+      - name: "Install Angry IP Scanner"
+        import_tasks:
+          file: tasks/angry-ip.yml

@@ -1,0 +1,3 @@
+---
+  - name: Setup a test VM
+    become: true

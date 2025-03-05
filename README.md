@@ -17,3 +17,8 @@ First, install pipx: `sudo apt install pipx`
 
 Then follow the instructions here:
 https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#installing-and-upgrading-ansible-with-pipx
+
+## Playbooks
+### angry-ip.yml
+Installs Angry IP Scanner
+

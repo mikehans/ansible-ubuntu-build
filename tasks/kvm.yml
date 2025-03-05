@@ -1,0 +1,25 @@
+- name: "Install kvm"
+  apt:
+    pkg:
+      - qemu-kvm 
+      - libvirt-daemon-system
+      - libvirt-clients 
+      - bridge-utils 
+      - virtinst
+      - virt-manager  
+
+- name: "Enable libvirtd in systemd"
+  systemd_service:
+     name: libvirtd
+     state: started
+     enabled: true
+
+- name: "Print environment"
+  debug:
+    msg: "{{ lookup('ansible.builtin.env'), 'USER' }} is the user.}}"
+
+- name: "Add current user to required groups"
+  user:
+    append: true
+    user: mike
+    groups: libvirt,kvm,libvirt-qemu

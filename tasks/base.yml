@@ -1,0 +1,9 @@
+- name: "Update and upgrade installed packages"
+  apt:
+    update_cache: true
+    upgrade: full
+    autoremove: true
+
+- name: Install essential packages
+  packages:
+    - "{{ packages }}"

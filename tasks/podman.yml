@@ -2,15 +2,20 @@
 - name: Setup Podman
   hosts: localhost
   connection: local
-  become: true
   tasks:
+
     - name: "Install podman"
+      become: true
       apt:
         name: podman
       register: podman_status
       
-    - name: "Initialise podman"
-      shell: podman machine init && podman machine start
+    - name: "Initialise podman - machine init"
+      shell: podman machine init
+      when: podman_status.changed
+
+    - name: "Initialise podman - machine start"
+      shell: podman machine start
       when: podman_status.changed
 
     - name: "Install Podman Desktop (flatpak)"

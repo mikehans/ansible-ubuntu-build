@@ -1,0 +1,4 @@
+username: mike
+packages:
+  - vlc
+  - postgresql-client

@@ -1,0 +1,7 @@
+username: mike
+base_packages:
+  - software-properties-common
+  - vim
+  - tmux
+  - htop
+

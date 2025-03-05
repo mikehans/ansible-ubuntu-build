@@ -1,0 +1,17 @@
+- name: "Update and upgrade installed packages"
+  apt:
+    update_cache: true
+    upgrade: full
+    autoremove: true
+
+- name: "Ensure git is present and up to date"
+  apt:
+    name: git
+    state: latest
+
+- name: "Install ripgrep"
+  apt:
+    name: ripgrep
+
+- name: "Install neovim"
+  
