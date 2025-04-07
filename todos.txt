@@ -1,0 +1,13 @@
+- Add the postgresql repo to get the latest postgres and psql
+- 
+- install i3wm and configure
+- install nitrogen
+- install gnu stow
+- git clone dotfiles to stowed_dotfiles
+- deploy config files from stowed_dotfiles
+- what about games:
+    - supertuxkart
+    - openttd
+- digikam (appimages)
+- darktable (appimages)
+- install kvm / qemu
