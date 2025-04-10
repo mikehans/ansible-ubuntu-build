@@ -10,6 +10,7 @@
 - [] digikam (appimages)
 - [] darktable (appimages)
 - [] install kvm / qemu
+- [] nvim
 - [] vs code
 - [] git
 - [] podman desktop
@@ -19,3 +20,7 @@
 - [] thunderbird
 - [] firefox
 - [] kde connect
+- [] update bash for gnu stow
+- [] update gitconfig for gnu stow
+- [] update i3 for gnu stow
+- [] update nvim for gnu stow
