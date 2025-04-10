@@ -6,4 +6,3 @@
 - name: "Install Angry IP Scanner"
   apt:
     deb: https://github.com/angryip/ipscan/releases/download/3.9.1/ipscan_3.9.1_all.deb
-      

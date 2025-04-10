@@ -1,0 +1,4 @@
+- name: "Ensure GNU Stow is installed"
+  apt:
+    name: stow
+    state: latest
